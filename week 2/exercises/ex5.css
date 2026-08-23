@@ -1,3 +1,22 @@
 .greenbox {
-    background-color: aquamarine;
+    background-color: #befeeb;
+}
+
+.redbox {
+    background-color: #ffc8c8;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    size: 15px;
+    font-style: italic;
 }
