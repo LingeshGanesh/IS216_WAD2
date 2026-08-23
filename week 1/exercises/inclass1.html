@@ -1,0 +1,18 @@
+<!DOCTYPE html content="width=device-width, initial-scale=1.0">
+
+
+<head>
+    <title>Pen</title>
+</head>
+
+<body>
+    Name: <input id="customerName", type="text"><br>
+    Age: <input id="age" type="range" min="10" max="50"><br><br>
+    <button onclick="greet()">Submit</button>
+    <p id="greeting"></p>
+    <script>
+        function greet(){
+            document.getElementById("greeting").innerText = "Hello "+document.getElementById("customerName").value+", age "+document.getElementById("age").value
+        }
+    </script>
+</body>
