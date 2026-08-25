@@ -1,38 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	
-	<style>
-
-		/* Add your codes here */
-		/* you can make use of external css too */
-		
-	</style>
-
+    <link rel="stylesheet" href="ex6.css">
 </head>
 
 
 <body>
 
-	<ul>
-		<li><a class="active" href="home.html">Home</a></li>
-		<li><a href="register.html">Register</a></li>
-		<li><a href="feedback.html">Feedback</a></li>
-	  </ul>
+    <div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="register.html">Register</a>
+    <a class="active" href="feedback.html">Feedback</a>
+    </div>
+
 	<h2> Feedback Form</h2>
 		
-	<form>
+	<form class="feedbackForm">
 		<label for="mytitle">Title:&nbsp;&nbsp;&nbsp;</label>
-		<input type="text" name="title" id="mytitle" value="Title of Feedback" size="25" />
+		<input type="text" name="title" class="inputBox" id="mytitle" value="Title of Feedback" size="25" />
 		<br/>
 	
 		<label for="myname">Name:&nbsp;</label>
-		<input type="text" name="name" id="myname" value="Enter Your Name" size="25" />
+		<input type="text" name="name" class="inputBox" id="myname" value="Enter Your Name" size="25" />
 		<br/>
 		
 		<label for="feedbktype">Type: &nbsp;&nbsp;</label>
-		<select name="type" id="feedbktype">
+		<select name="type" id="feedbktype" class="inputBox">
 			<option value="inquiries">Inquiries</option>
 			<option value="feedbk" selected>Feedback</option>
 			<option value="suggestions">Suggestions</option>
@@ -43,13 +36,13 @@
 
 		<label for="feedbkdetails">Feedback</label>
 		<br/>
-			<textarea name="details" id="feedbkdetails" rows="6" cols="50">Comments</textarea>
+			<textarea name="details" id="feedbkdetails" rows="6" cols="50" class="textBox">Comments</textarea>
 		<br/>
 		<br/>
 		<br/>
 
-		<input type="reset"/>
-		<input type="submit"/>
+		<input type="reset" class="submit"/>
+		<input type="submit" class="submit"/>
 
 	</form>
 </body>

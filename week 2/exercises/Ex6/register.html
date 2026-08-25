@@ -1,42 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
-    <style>
-
-       	/* Add your codes here */
-		/* you can make use of external css too */
-    
-
-    </style>
-
+    <link rel="stylesheet" href="ex6.css">
 </head>
 
 <body>
 
-    <ul>
-        <li><a class="active" href="home.html">Home</a></li>
-        <li><a href="register.html">Register</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
-    </ul>
+    <div class="navbar">
+    <a href="home.html">Home</a>
+    <a class="active" href="register.html">Register</a>
+    <a href="feedback.html">Feedback</a>
+    </div>
 
 <h2> Registration </h2>
 
-<div>
+<div class="regForm">
     
     <form action>
         Name : <br>
-        <input type="text" name="name" value="Enter your name"></input>
+        <input type="text" class="inputBox" name="name" value="Enter your name"></input>
         <br>
         Age : <br>
-        <input type="number" name="age"></input>
+        <input type="number" class="inputBox" name="age"></input>
         <br>
         Gender: <br>
         <input type="radio" name="gender" value="male"> Male<br>
         <input type="radio" name="gender" value="female"> Female<br>
         <br>
         Types of membership: <br>
-        <select name="type">
+        <select name="type" class="inputBox">
             <option value="OneYr">1 Year</option>
             <option value="FiveYr" selected>5 Years</option>
             <option value="LifeTime">Life Time</option>
@@ -52,7 +44,7 @@
             <input type="checkbox" name="interest" value="Cars"> Cars<br>
         </br>
         
-        <input type ="button" name="submit" value="Submit">
+        <input type ="button" name="submit" class="submit" value="Submit">
      </form>
 
 </div>
