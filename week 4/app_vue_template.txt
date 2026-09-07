@@ -1,0 +1,140 @@
+<script setup>
+// ══════════════════════════════════════════════════════
+//  IS216 Week 4 — Student Profile App
+//  Concepts: ref · {{ }} · v-if/v-else · v-bind
+//            v-model · :class · :style
+// ══════════════════════════════════════════════════════
+
+// TODO 1 ─ import ref from 'vue'
+
+// ── Reactive data ───────────────────────────────────
+// TODO 2 ─ define these refs:
+//   name        → 'Alex Tan'
+//   gpa         → 3.75
+//   imgSrc      → '/src/assets/profile_pic.jpeg'
+//   showModules → false
+//   newModule   → ''  (holds the text-input value)
+//   newGrade   → ''  (holds the text-input value)
+//   newYear   → 1  (holds the text-input value)
+
+// TODO 3 ─ define a ref called `modules` whose initial value
+//   is this array:
+//   [
+//     { name: 'IS111 Introduction to Programming',    grade: 'A',  year: 1 },
+//     { name: 'IS112 Data Management',                grade: 'A-', year: 1 },
+//     { name: 'IS113 Web Application Development I',  grade: 'B+', year: 1 },
+//   ]
+
+// ── Methods ─────────────────────────────────────────
+
+// TODO 10 ─ define addModule() that:
+//   • does nothing if newModule.value is blank
+//   • otherwise pushes name, grade and year into modules.value
+//   • then clears name, grade and year.
+</script>
+
+<template>
+  <div class="card">
+    <!-- ── Section 1: Profile photo (v-bind:src) ── -->
+    <!-- TODO 4 ─ render an <img> for profile picture with width 120px -->
+
+    <!-- ── Section 2: Interpolation {{ }} ── -->
+    <!-- TODO 5 ─ render an <h1> showing name,
+         and a <p> showing "Year X | GPA: Y" -->
+
+    <!-- ── Section 3: v-model ── -->
+    <!-- TODO 6 ─ render a labelled text input bound to name
+         so that typing in it updates the heading live -->
+    <div class="field">
+      <label>Edit name:</label>
+      <!-- bind input here -->
+    </div>
+
+    <!-- ── Section 4: v-if -->
+    <!-- TODO 7 ─ render a button that toggles showModules.
+         Label it "Show Modules" when hidden, "Hide Modules" when visible -->
+
+    <div>
+      <!-- TODO 8 ─ when showModules is true, render a <div class="card" v-for="..."> -->
+      <div class="card" v-for="mod in modules" :key="mod.name">
+        <!-- TODO 10 -- use highlight class to highlight when grade is A -->
+        {{ mod.name }} — Grade: <span > {{ mod.grade }} </span>, Year {{ mod.year }}
+      </div>
+    </div>
+
+    <!-- ── Section 5: add to list ── -->
+    <div class="module-container">
+      <!-- TODO 9 ─ when showModules is true, render an input
+         bound to newModule and a button "Add" that calls addModule() -->
+    </div>
+  </div>
+</template>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #f3f4f6;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.card {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 28px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.module-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+img {
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 16px;
+}
+h1 {
+  margin: 0 0 4px;
+  font-size: 1.6rem;
+}
+
+button {
+  margin: 8px 4px 8px 0;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #1e3a5f;
+  color: white;
+  font-size: 0.95rem;
+}
+button:hover {
+  background: #2d5480;
+}
+
+input {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 320px;
+}
+</style>
