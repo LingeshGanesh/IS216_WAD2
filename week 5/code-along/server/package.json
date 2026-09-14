@@ -1,0 +1,11 @@
+{
+  "name": "is216-wk5-student-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.0"
+  }
+}

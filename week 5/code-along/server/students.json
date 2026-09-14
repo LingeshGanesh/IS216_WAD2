@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Alex Tan",
+    "year": 2,
+    "gpa": 3.75
+  },
+  {
+    "id": 2,
+    "name": "Bernice Lim",
+    "year": 3,
+    "gpa": 3.9
+  },
+  {
+    "id": 3,
+    "name": "Charlie Wong",
+    "year": 1,
+    "gpa": 2.85
+  },
+  {
+    "id": 4,
+    "name": "Diana Koh",
+    "year": 4,
+    "gpa": 3.5
+  },
+  {
+    "id": 5,
+    "name": "Ethan Ng",
+    "year": 2,
+    "gpa": 3.2
+  },
+  {
+    "id": 6,
+    "name": "Fiona Chen",
+    "year": 1,
+    "gpa": 3.65
+  },
+  {
+    "id": 7,
+    "name": "Genevive Chan",
+    "year": 1,
+    "gpa": 3.95
+  },
+  {
+    "id": 8,
+    "name": "Henry Lee",
+    "year": 1,
+    "gpa": 3.55
+  },
+  {
+    "id": 9,
+    "name": "Ice Tan",
+    "year": 1,
+    "gpa": 3.6
+  }
+]
