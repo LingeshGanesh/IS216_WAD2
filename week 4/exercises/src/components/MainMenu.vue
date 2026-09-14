@@ -4,6 +4,7 @@
     <RouterLink to="/Ex2/">Exercise2</RouterLink>
     <RouterLink to="/Ex3/">Exercise3</RouterLink>
     <RouterLink to="/Ex4/">Exercise4</RouterLink> 
+    <RouterLink to="/inClass">In-Class Exercise</RouterLink>
    
 </template>
 
