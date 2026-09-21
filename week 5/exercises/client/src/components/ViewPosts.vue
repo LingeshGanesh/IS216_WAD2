@@ -32,6 +32,7 @@ onMounted(async () => {
            
         </table>
     </div>
+    <a href="http://localhost:5173/Ex5/"><button>Add Post</button></a>
 </template>
 
 <style scoped>

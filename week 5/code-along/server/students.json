@@ -52,5 +52,23 @@
     "name": "Ice Tan",
     "year": 1,
     "gpa": 3.6
+  },
+  {
+    "id": 10,
+    "name": "test",
+    "year": 1,
+    "gpa": 2.2
+  },
+  {
+    "id": 11,
+    "name": "nevin koh",
+    "year": 4,
+    "gpa": 3.6
+  },
+  {
+    "id": 12,
+    "name": "leon kennedy",
+    "year": 4,
+    "gpa": 4
   }
 ]
