@@ -20,6 +20,13 @@ onMounted(async () => {
 
 <template>
   <!-- TODO: make use of the 'BlogPost' component to display the blog posts -->
+   <BlogPost
+    v-for="(post, index) in posts"
+    :key="index"
+    :subject="post.subject"
+    :entry="post.entry"
+    :mood="post.mood"
+   />
 
 
 </template>
