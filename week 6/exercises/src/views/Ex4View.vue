@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 
 // TODO: Import the TaskTracker component
-
+import TaskTracker from '@/components/TaskTracker.vue'
 
 const desc = ref('')
 const deadline = ref('')
@@ -15,7 +15,9 @@ function add() {
 }
 
 // TODO: Add a new method, to delete a task completed
-
+function deleteTask(idx) {
+  taskList.value.splice(idx, 1)
+}
 
 </script>
 
