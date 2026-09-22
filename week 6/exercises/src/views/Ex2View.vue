@@ -8,7 +8,7 @@ const posts = ref([])
 
 onMounted(async () => {
   try {
-    const response = await axios.get('http://localhost:8000/getPosts')
+    const response = await axios.get('http://localhost:8000/posts')
     // this gets the data, which is an array
     posts.value = response.data
     console.log(response.data)

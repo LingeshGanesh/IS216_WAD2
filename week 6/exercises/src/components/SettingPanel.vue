@@ -13,14 +13,47 @@ const emit = defineEmits(['settings-changed'])
 // TODO: Implement the helper method(s) as needed
 function loadSettings() {
   // Add code here
+  const saved = localStorage.getItem(STORAGE_KEY)
+
+  if (saved) {
+    const settings = JSON.parse(saved)
+
+    theme.value = settings.theme
+    fontSize.value = settings.fontSize
+  }
+
+  emit ('settings-changed', {
+    theme: theme.value,
+    fontSize: fontSize.value
+  })
 }
 
 function saveSettings() {
   // Add code here
+  const settings =  {
+    theme:theme.value,
+    fontSize: fontSize.value
+  }
+
+  localStorage.setItem(
+    STORAGE_KEY,
+    JSON.stringify(settings)
+  )
+
+  emit ('settings-changed', settings)
 }
 
 function resetSettings() {
   // Add code here
+  theme.value = 'light'
+  fontSize.value = 16
+
+  localStorage.removeItem(STORAGE_KEY)
+
+  emit('settings-changed', {
+    theme: theme.value,
+    fontSize: fontSize.value
+  })
 }
 
 onMounted(() => {

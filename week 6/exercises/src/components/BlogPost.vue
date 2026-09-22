@@ -13,14 +13,18 @@ const props = defineProps({
 })
 console.log(props.mood)
 
-const moodImg = computed(()=>{
-  if (props.mood==='Happy') {
-    return happyImg 
-  } else if (props.mood==='Sad') {
-    return sadImg
-  } else {
-    return angryImg
-  }
+// const moodImg = computed(()=>{
+//   if (props.mood==='Happy') {
+//     return happyImg 
+//   } else if (props.mood==='Sad') {
+//     return sadImg
+//   } else {
+//     return angryImg
+//   }
+// })
+
+const moodImg = computed(()=> {
+  return "/"+props.mood.toLocaleLowerCase()+".png"
 })
 </script>
 
