@@ -1,0 +1,253 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #1f2937;
+  background: #f6f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f6f7fb;
+}
+
+a { color: inherit; }
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 24px;
+  background: rgba(255,255,255,.96);
+  border-bottom: 1px solid #dfe3ea;
+  backdrop-filter: blur(10px);
+}
+
+.brand {
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.home-link {
+  text-decoration: none;
+  font-size: .92rem;
+  padding: 7px 11px;
+  border: 1px solid #cfd5df;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.page-shell {
+  width: min(1100px, calc(100% - 32px));
+  margin: 28px auto 64px;
+}
+
+.page-header {
+  margin-bottom: 26px;
+}
+
+.eyebrow {
+  margin: 0 0 5px;
+  font-size: .82rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #667085;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: -0.04em;
+  color: #111827;
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  color: #111827;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+p {
+  line-height: 1.65;
+}
+
+.summary {
+  max-width: 800px;
+  margin: 0;
+  color: #5d6675;
+  font-size: 1.02rem;
+}
+
+.source-note {
+  margin: 14px 0 0;
+  font-size: .85rem;
+  color: #7b8492;
+}
+
+.section-stack {
+  display: grid;
+  gap: 18px;
+}
+
+.cheat-section {
+  padding: 20px;
+  border: 1px solid #dde2ea;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(17, 24, 39, .035);
+}
+
+.section-description {
+  margin: 5px 0 14px;
+  color: #5d6675;
+}
+
+.plain-notes {
+  margin: 12px 0 0;
+  padding-left: 21px;
+  color: #454f5f;
+  line-height: 1.65;
+}
+
+.plain-notes li + li { margin-top: 5px; }
+
+.code-box {
+  margin-top: 12px;
+  overflow: hidden;
+  border: 1px solid #bfc7d4;
+  border-radius: 9px;
+  background: #fbfcfe;
+}
+
+.code-box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 11px;
+  border-bottom: 1px solid #d6dce5;
+  background: #f2f4f8;
+}
+
+.code-box-title {
+  font-size: .82rem;
+  font-weight: 800;
+  color: #4b5563;
+}
+
+.copy-btn {
+  border: 1px solid #c7ced8;
+  border-radius: 6px;
+  padding: 4px 8px;
+  background: #fff;
+  cursor: pointer;
+  font-size: .76rem;
+  color: #374151;
+}
+
+pre {
+  margin: 0;
+  padding: 14px;
+  overflow-x: auto;
+  white-space: pre;
+  tab-size: 2;
+}
+
+code {
+  font-family: "Cascadia Code", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: .9rem;
+  line-height: 1.55;
+  color: #18212f;
+}
+
+.home-intro {
+  margin-bottom: 22px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #cfd5df;
+  border-radius: 10px;
+  background: #fff;
+  font: inherit;
+  outline: none;
+}
+
+.search-box:focus {
+  border-color: #8a94a5;
+  box-shadow: 0 0 0 3px rgba(138, 148, 165, .12);
+}
+
+.topic-group {
+  margin-top: 28px;
+}
+
+.topic-group-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.topic-card {
+  display: block;
+  min-height: 126px;
+  padding: 16px;
+  border: 1px solid #d7dce5;
+  border-radius: 12px;
+  background: #fff;
+  text-decoration: none;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 22px rgba(17, 24, 39, .08);
+}
+
+.topic-card p {
+  margin: 7px 0 0;
+  color: #677181;
+  font-size: .9rem;
+  line-height: 1.45;
+}
+
+.empty-state {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  border: 1px dashed #c6ccd6;
+  border-radius: 10px;
+  color: #737d8c;
+  background: #fff;
+}
+
+@media (max-width: 620px) {
+  .topbar { padding: 12px 16px; }
+  .page-shell { width: min(100% - 20px, 1100px); margin-top: 20px; }
+  .cheat-section { padding: 16px; }
+  pre { padding: 12px; }
+  code { font-size: .82rem; }
+}
