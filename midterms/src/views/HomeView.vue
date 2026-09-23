@@ -33,8 +33,7 @@ const groups = computed(() => {
 <template>
   <section>
     <div class="home-intro">
-      <p class="eyebrow">Weeks 1–5</p>
-      <h1>Web App Dev II Lab Cheat Sheet</h1>
+      <h1>WADII Lab Test Cheat Sheet</h1>
       <p class="summary">
         Search by concept, then open the relevant skill page for a short explanation,
         code syntax and common gotchas.
