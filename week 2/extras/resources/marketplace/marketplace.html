@@ -3,8 +3,29 @@
 
     <head>
         <style>
-            
-       
+            table {
+                border: 1px solid black;
+            }
+            th {
+                border: 1px solid black;
+                text-align: center;
+                background-color: palevioletred;
+            }
+            td {
+                border: 1px solid black;
+                text-align: center;
+            }
+            tr:nth-child(odd) {
+                background-color: lightblue;
+            }
+            p {
+                font-family: Arial, Helvetica, sans-serif;
+                color: blue;
+            }
+            input:checked {
+                height: 50px;
+                width: 50px;
+            }
         </style>
     </head>
 
@@ -14,10 +35,10 @@
         <img style="height:100;width:300" src="images/marketplace.jpg">
         <h1> Welcome to my Marketplace </h1>
 
-        <h2> Fruit Section </h2>
+        <h2 style="color: red;"> Fruit Section </h2>
         <p> The list of fruit available are as below :</p>
-	    <div >
-            <div >
+	    <div  style="display: flex; gap: 50px;">
+            <div>
                 <img style="height:200px;width:200px" src="images/fruit.jpeg">
             </div>
             
@@ -53,11 +74,11 @@
             </div>
         </div>
 
-        <h2> Vegetable Section</h2>
+        <h2 style="color: green;"> Vegetable Section</h2>
 
         <p> The list of vegetable available are as below :</p>
         
-        <div>
+        <div style="display: flex; gap:50px">
             <div>
                 <table style:border=1>
                     <tr> 
@@ -88,9 +109,9 @@
             
         </div>
     
-        <h2> Drinks Section</h2>
+        <h2 style="color: maroon;"> Drinks Section</h2>
         <p> The list of drinks available are as below :</p>
-        <div>
+        <div style="display: flex; gap: 50px;">
 
             <div>
                 <img style="height:100px;width:100px" src="images/coffee.jpg">

@@ -4,16 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ex7</title>
-    <style>
-  
-    </style>
+    <link rel="stylesheet" href="recipehub.css">
   </head>
   <body>
-    <div class="container">
-      <header>
+    <div class="container" style="display: grid; grid-template-columns: 2fr 1fr;">
+      <header style="grid-column: 1/3">
         <h1>RecipeHub 🍝</h1>
         <nav>
-          <ul>
+          <ul style="display: flex; gap:20px;">
             <li><a href="#">Home</a></li>
             <li><a href="#">Recipes</a></li>
             <li><a href="#">Collections</a></li>
@@ -76,7 +74,7 @@
           </div>
         </section>
       </aside>
-      <footer>
+      <footer style="grid-column: 1/3">
         <strong>RecipeHub</strong>
         <span>&copy; 2025 RecipeHub</span>
       </footer>

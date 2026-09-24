@@ -2,27 +2,68 @@
 <html>
     <head>
         <title> All About Fruits </title>
+
+        <style>
+            h2 {
+            color: goldenrod; 
+            font-size: 25px; 
+            padding-left: 10px; 
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        </style>
     </head>
    
-    <body>
+    <body style="margin:0;">
 
         <!--- This is the side menu bar -->
-        <div>
+        <div style="
+            width: 160px;
+            height: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: black;
+            overflow-x: hidden;
+            float: left;
+            padding-top: 20px
+        ">
             
-            <a href="#about">About</a> <br/>
-            
-            <a href="#benefits">Benefits</a> <br/>
-            <a href="#healthy">Healthy List</a> <br/>
+            <a style="
+                padding: 6px;
+                text-decoration: none;
+                font-size: 25px;
+                color: lightgray;
+                display:block;
+            " href="#about">About</a> <br/>
+
+            <a style="
+                padding: 6px;
+                text-decoration: none;
+                font-size: 25px;
+                color: lightgray;
+                display: block;
+            "
+            href="#benefits">Benefits</a> <br/>
+
+            <a style="
+                padding: 6px;
+                text-decoration: none;
+                font-size: 25px;
+                color: lightgray;
+                display:block;    
+            "
+            href="#healthy">Healthy List</a> <br/>
         </div>
 
         <!--- End of container div -->
 
-        <div>
+        <div style="margin-left: 160px;">
 
-            <h1 id="about"> All About Fruit </h1>
+            <h2 id="about"> All About Fruit </h2>
 
-            <p > 
-                <img src="fruit-pic.jpg" heigth="300" width="300" style="padding:10;float:left;margin-right:20px"> 
+            <p style="border: 2px solid rgb(84, 206, 84); margin-left: 10px; padding:10px; border-radius: 15px"> 
+                <img src="fruit-pic.jpg" height="300" width="300" style="padding:10;float:left;margin-right:20px"> 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu lorem vel arcu hendrerit tincidunt sit amet 
                 eu libero. Etiam finibus pharetra enim vel faucibus. Nulla velit urna, molestie at pellentesque quis, pellentesque 
                 non erat. Cras maximus quam id nisl vehicula sagittis. Suspendisse ut semper urna, id malesuada tellus. Nullam 
@@ -35,11 +76,11 @@
                     pulvinar cursus, mi ante ultricies mi, malesuada ullamcorper elit ligula sit amet erat.
             </p>
 
-            <h2 id="benefits"> Benefits of Fruit </h2>
+            <h2 style="color: goldenrod; font-size: 25px; padding-left: 10px; font-family: Verdana, Geneva, Tahoma, sans-serif;" id="benefits"> Benefits of Fruit </h2>
         
         
-            <p> 
-                <img src="apple.jpg" > 
+            <p style="border: 2px solid rgb(201, 72, 212); margin-left: 10px; padding:10px; border-radius: 5px"> 
+                <img src="apple.jpg" style="padding:10; float:right; margin-left:10px"> 
                 Pellentesque nec dui pulvinar, aliquam est sed, luctus elit. Proin vitae rhoncus ligula. Fusce ultrices, tortor ac auctor congue, 
                 elit lectus cursus eros, a maximus lacus leo in libero. Suspendisse magna sapien, suscipit eget ante eu, efficitur laoreet magna. 
                 Fusce faucibus, ligula ac ullamcorper feugiat, lorem nibh bibendum erat, non efficitur mi diam congue risus. Maecenas tristique 
@@ -49,8 +90,7 @@
             </p>
         
     
-            Some benefits are:
-            <br/>
+            <div style="margin-left:10px">Some benefits are: </div>
             <ul>
 
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -63,10 +103,9 @@
                 <li>benefit 6 ... </li>
             </ul>
             
-            <h2 id="healthy"> 
-                 Healthiest Fruits on Planet</h2>
+            <h2 id="healthy"> Healthiest Fruits on Planet</h2>
                 
-                <ol> 
+                <ol style="background-color: rgb(187, 226, 187); margin-left: 10px;"> 
                     <li>Grapefruit</li> 
                     <li>Pineapple</li>
                     <li>Avocado</li>
