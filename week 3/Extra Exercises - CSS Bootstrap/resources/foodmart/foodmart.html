@@ -16,66 +16,174 @@
 
     <style>
         /* Add your CSS here */
+        .header {
+            text-align: center;
+            background-image: url("images/fruit.jpg");
+            padding: 30px;
+            border-top: 1px solid red;
+            border-bottom: 1px solid red;
+        }
+        h1 {
+            background-color: white;
+        }
+        .foodName {
+            font-size: 20px;
+            color: red;
+        }
+        .foodDescription {
+            font-size: 15px;
+            color: blue;
+        }
     </style>
 
 </head>
 
 <body>
 
+    <div class="header">
+        <h1> Welcome to Food Mart </h1>
+    </div>
+    <div style="background-color: rgb(255, 193, 7);">
+        <div style="padding-top:20px; font-size: 20px; text-align: center; color: white;"><h2>Cooked Food</h2></div>
+        <div style="color: white; text-align: center; font-size: 10px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores perspiciatis labore illo
+        pariatur qui, quod, consequuntur, perferendis iure explicabo et tenetur quae non inventore
+        veritatis repellat eius laborum unde eaa</div>
+        <hr style="width: 95%; margin:auto">
 
-    <h1> Welcome to Food Mart </h1>
+        <div class="container" style="padding-top: 15px;">
+            <div class="row gy-3" style="text-align: center;">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div style="padding-top:10px;"><img src="images/burger.jpg" alt="burger" style=" width: 100%;"></div>
+                        <div class="card-body">
+                            <div class="foodName">Burger</div>
+                            <div class="foodDescription">Burger. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <table class="table table-borderless">
+                                <tr>
+                                    <td style="width:50%">
+                                        <div style="text-align: left;">Portion</div>
+                                        <select style="width: 100%; box-sizing: border-box;">
+                                            <option value="3">Large</option>
+                                            <option value="2">Medium</option>
+                                            <option value="1">Small</option>
+                                        </select>
+                                    </td>
+                                    <td style="width:50%">
+                                        <div style="text-align: left;">Quantity</div>
+                                        <input type="text" style="width: 100%; box-sizing: border-box;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div style="text-align: center;">Take Away?</div>
+                                            <select style="width: 100%; box-sizing: border-box;">
+                                                <option value="1">Yes</option>
+                                                <option value="0">No</option>
+                                            </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <button type="button" class="btn btn-outline-primary">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div style="padding-top:10px;"><img src="images/chickenrice.jpg" alt="chicken rice" style=" width: 100%;"></div>
+                        <div class="card-body">
+                            <div class="foodName">Burger</div>
+                            <div class="foodDescription">Burger. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <table class="table table-borderless">
+                                <tr>
+                                    <td style="width:50%">
+                                        <div style="text-align: left;">Portion</div>
+                                        <select style="width: 100%; box-sizing: border-box;">
+                                            <option value="3">Large</option>
+                                            <option value="2">Medium</option>
+                                            <option value="1">Small</option>
+                                        </select>
+                                    </td>
+                                    <td style="width:50%">
+                                        <div style="text-align: left;">Quantity</div>
+                                        <input type="text" style="width: 100%; box-sizing: border-box;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div style="text-align: center;">Take Away?</div>
+                                            <select style="width: 100%; box-sizing: border-box;">
+                                                <option value="1">Yes</option>
+                                                <option value="0">No</option>
+                                            </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <button type="button" class="btn btn-outline-primary">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div style="padding-top:10px;"><img src="images/noodle.jpg" alt="noodle" style=" width: 100%;"></div>
+                        <div class="card-body">
+                            <div class="foodName">Burger</div>
+                            <div class="foodDescription">Burger. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <table class="table table-borderless">
+                                <tr>
+                                    <td style="width:50%">
+                                        <div style="text-align: left;">Portion</div>
+                                        <select style="width: 100%; box-sizing: border-box;">
+                                            <option value="3">Large</option>
+                                            <option value="2">Medium</option>
+                                            <option value="1">Small</option>
+                                        </select>
+                                    </td>
+                                    <td style="width:50%">
+                                        <div style="text-align: left;">Quantity</div>
+                                        <input type="text" style="width: 100%; box-sizing: border-box;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div style="text-align: center;">Take Away?</div>
+                                            <select style="width: 100%; box-sizing: border-box;">
+                                                <option value="1">Yes</option>
+                                                <option value="0">No</option>
+                                            </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <button type="button" class="btn btn-outline-primary">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; padding-top:30px; padding-bottom: 40px;"><button type="button" class="btn btn-success btn-lg">Check Out</button></div>
+    </div>
 
 
+    <div>
+        <ul class="nav justify-content-center my-3">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+        </ul>
+
+    </div>
 
 
-    Cooked Food
-
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores perspiciatis labore illo
-    pariatur qui, quod, consequuntur, perferendis iure explicabo et tenetur quae non inventore
-    veritatis repellat eius laborum unde eaa
-
-    Burger
-    Burger. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Portion
-    Large
-    Medium
-    Small
-    Quantity
-    Take Away?
-    Yes
-    No
-    <button>Add</button>
-    Chicken Rice
-    Chicken Rice. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Portion
-    Large
-    Medium
-    Small
-    Quantity
-    Take Away?
-    Yes
-    No
-    <button>Add</button>
-    Noodle
-    Noodle. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Portion
-    Large
-    Medium
-    Small
-    Quantity
-    Take Away?
-    Yes
-    No
-    <button>Add</button>
-
-    <button>Check Out</button>
-
-    Home
-    FAQ
-    Contact Us
-
-
-    Food Mart 2020
+    <div class="bg-primary-light bg-secondary text-center py-2 mb-5">
+        Food Mart 2020
+    </div>
 
 
 

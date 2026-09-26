@@ -16,32 +16,125 @@
 
     <style>
         /* Add your CSS here */
+        body {
+            text-align: center;
+        }
+        .topOfPage {
+            padding: 50px;
+            background-color: rgb(0, 123, 255);
+        }
+        .header {
+            color: white;
+            font-size: 50px;
+        }
+        .subheader {
+            color: white;
+        }
+        .header2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        table {
+            border-collapse: separate;
+            border-spacing: 0 10px;
+        }
+        tr {
+            background-color: yellow;
+            padding: 20px;
+        }
+        td {
+            text-align: left;
+        }
+        .title1 {
+            color: maroon;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .title2 {
+            color: green;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .timeslotForm {
+            background-color: rgb(238, 168, 168);
+            padding: 10px;
+        }
+        #colorsForm {
+            border: 1px solid red;
+            background-color: rgb(220, 246, 255);
+            padding: 10px;
+        }
     </style>
 
 </head>
 
 <body>
+    <div class="topOfPage">
+        <div class="header">Registration Page</div>
+        <div class="subheader">Enter the details to register</div>
+    </div>
+    <br>
+    <div class="col-10 offset-1">
+        <div class="header2">About You</div>
+        <table class="table table-borderless">
+            <tr>
+                <td style="width: 50%;">
+                    <div class="title1">First Name <span class="badge bg-success">must</span></div>
+                    <input type="text" placeholder="First Name" style="width: 100%; box-sizing: border-box;">
+                </td>
+                <td style="width: 50%;">
+                    <div class="title1">Last Name <span class="badge bg-success">must</span></div>
+                    <input type="text" placeholder="Last Name" style="width: 100%; box-sizing: border-box;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="title2">User Name <span class="badge bg-success">must</span></div>
+                    <input type="text" placeholder="Username" style="width: 100%; box-sizing: border-box;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="title2">Email <span class="badge bg-success">must</span></div>
+                    <input type="text" placeholder="Email" style="width: 100%; box-sizing: border-box;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="title2">Short Description</div>
+                    <textarea class="form-control" rows="2" placeholder="write a short description about yourself"></textarea>
+                </td>
+            </tr>
+        </table>
+        <div class="header2">Choose Timeslot</div>
+        <div class="timeslotForm">
+            <div style="text-align: left; padding-bottom: 10px;">Timeslot</div>
+            <select id="timeslot" style="width: 100%; box-sizing: border-box;">
+                <option value="1">0800 - 1000</option>
+                <option value="2">1000 - 1200</option>
+                <option value="3">1200 - 1400</option>
+                <option value="4">1400 - 1600</option>
+                <option value="5">1600 - 1800</option>
+            </select>
+        </div>
 
-    Registration Page
-    Enter the details to register
+        <div class="header2">Choose Colors</div>
+        <div id="colorsForm">
+            <div style="text-align: left;">
+                <label style="color: red; font-weight:bold"><input type="checkbox"> Red</label><br>
+                <label style="color: green; font-weight:bold"><input type="checkbox"> Green</label><br>
+                <label style="color: yellow; font-weight:bold"><input type="checkbox"> Yellow</label>
+            </div>
+            
+        </div>
+        <div class="d-flex justify-content-start" style="margin-top: 15px;">
+            <button class="btn btn-primary" style="justify-content: left;">Submit</button>
+        </div>
+        
 
-    First Name
-    Last Name
-    User name
-    Email
-    Short Description
-    Choose Timeslot
-    0800 - 1000
-    1000 - 1200
-    1200 - 1400
-    1400 - 1600
-    1600 - 1800
-    Choose Colors
-    Red
-    Green
-    Yellow
-    Submit
-
+    </div>
 
 
 
