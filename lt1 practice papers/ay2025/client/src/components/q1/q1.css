@@ -1,0 +1,64 @@
+/*
+  Name: 
+  Email: 
+*/
+
+/* Part A */
+.header {
+  background-color: #004d40;
+  align-items: center;
+  height: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.header-text {
+  color: white;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header img {
+  width: 100px;
+}
+
+/* Part B */
+.filter-form,
+.job-listings {
+  border: 8px;
+  vertical-align: top;
+}
+
+.filter-form {
+  margin-right: 20px;
+}
+
+.job-listings {
+  margin-left: 20px;
+  margin-top: 0px;
+}
+
+/* Part C */
+.filter-form form label {
+  width: 30%;
+}
+
+.filter-form input[type="text"],
+.filter-form select {
+  width: 60%;
+}
+
+/* Part D: Add an adequate selector here */
+tr:nth-child(even){
+  background-color: #f1f1f1;
+}
+
+/* Part E */
+.badge {
+  justify-content: right;
+  text-align: right;
+  margin-top: 0px;
+}
+
+
