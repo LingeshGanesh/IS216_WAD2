@@ -7,13 +7,13 @@
         <p class="text-muted mb-0">Choose a character to view art and a short blurb.</p>
     </header>
 
-    <main class="container py-4">
+    <main class="container py-4" style="display: grid;">
 
         <div class="row g-4 align-items-start">
 
             <!-- LEFT: Character Nav -->
-            <nav id="navCol" class="col-12" aria-label="Character selector">
-                <ul class="nav nav-pills" role="tablist">
+            <nav id="navCol" class="col-12 col-md-12 col-lg-3 order-sm-1 order-md-2 order-lg-1"  aria-label="Character selector">
+                <ul class="nav nav-pills d-flex flex-column flex-sm-row flex-md-row flex-lg-column justify-content-lg-left" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="tab-albedo" data-bs-toggle="tab"
                                 data-bs-target="#pane-albedo" type="button" role="tab"
@@ -38,7 +38,7 @@
             </nav>
 
             <!-- MIDDLE: Character Text -->
-            <section id="contentCol" class="col-12">
+            <section id="contentCol" class="col-12 col-md-6 col-lg-5 order-sm-3 order-md-1 order-lg-2">
                 <h2 class="h4">Character Notes</h2>
                 <p class="mb-3">
                     Click a name to switch the featured artwork. Use the form to log a quick note about the selected character.
@@ -74,7 +74,7 @@
             </section>
 
             <!-- RIGHT: Character Image (Bootstrap Tabs content) -->
-            <aside id="imageCol" class="col-12">
+            <aside id="imageCol" class="col-12 col-md-6 col-lg-4 order-sm-2 order-md-1 order-lg-3">
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="pane-albedo" role="tabpanel" aria-labelledby="tab-albedo" tabindex="0">
                         <img src="/images/albedo.png" alt="Albedo character art" class="img-fluid rounded">

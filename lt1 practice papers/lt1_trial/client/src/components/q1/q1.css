@@ -37,9 +37,10 @@ body {
 .calendar-grid {
     gap: 8px;
     display: grid;
-    width: 90vw;  // takes up 90% of viewport's width. Unlike "width: 90%" (which calculates 90% based on the immediate parent element, like a <div> or <main>), vw ignores parent containers completely and looks directly at the browser window itself.
+    width: 90vw; 
     grid-template-rows: 50px 50px 50px 50px 50px 50px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border-radius: 10px
 }
 
 /* Base styles for custom <day> elements */
@@ -49,6 +50,10 @@ day {
     color: dimgray;
     background-color: snow;
     border: 1px solid lightgray;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    place-items: center;
 }
 
 /* Row 1: Header styling */
@@ -57,7 +62,8 @@ day.header {
     padding: 10px 0;
     background-color: indigo;
     color: white;
-    border: none;
+    border-radius: 10px;
+    text-align: center;
     font-size: 75%;
 }
 
@@ -68,4 +74,14 @@ day.inactive {
     border-color: whitesmoke;
 }
 
-/* (b) (c) TODO here: add in a new selectors if necessary */
+/* (b) (c) TODO here: add in  a new selectors if necessary */
+day.today {
+    background-color: lavender;
+    color: darkslateblue;
+    border: 2px solid royalblue;
+}
+
+day:hover {
+    background-color: lightsteelblue;
+    cursor: pointer;
+}

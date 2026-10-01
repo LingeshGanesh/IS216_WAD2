@@ -62,12 +62,12 @@ function collectShirt() {
       <label>T-Shirt Size: </label> &nbsp;
       <span v-for="item in inventory" :key="item.size">
         <input 
-          v-if="item.stock>1"
           type="radio" 
           name="shirtSize" 
           :id="item.size" 
           :value="item.size"
           v-model="selectedSize" 
+          :disabled="item.stock<1"
         />
         <label :for="item.size">
           {{ item.size }} ({{item.stock}})

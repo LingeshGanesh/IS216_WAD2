@@ -18,7 +18,7 @@ Email:
 
 <template>
     <!-- Navigation-->
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light navbar-expand-lg">
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="#!">Start Bootstrap</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -56,7 +56,7 @@ Email:
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
                 <h1 class="display-4 fw-bolder ">Order Your Photos in Style!</h1>
-                <p class="lead fw-normal text-white-50 mb-0 ">The Only SMU Photo Shop</p>
+                <p class="lead fw-normal text-white-50 mb-0 fst-italic">The Only SMU Photo Shop</p>
             </div>
         </div>
     </header>
@@ -64,7 +64,7 @@ Email:
     <section class="py-5">
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row gx-4 row-cols-3 justify-content-center">
-                <div class="col mb-5">
+                <div class="col mb-5 col-6 col-md-4 col-lg-3">
                     <div class="card h-100">
                         <!-- Product image-->
                         <img class="card-img-top" :src="p1" alt="..." />
@@ -84,10 +84,10 @@ Email:
                         </div>
                     </div>
                 </div>
-                <div class="col mb-5">
+                <div class="col mb-5 col-6 col-md-4 col-lg-3">
                     <div class="card h-100">
                         <!-- Hot badge-->
-                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Hot!
+                        <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Hot!
                         </div>
                         <!-- Product image-->
                         <img class="card-img-top" :src="p2" alt="..." />
@@ -115,7 +115,7 @@ Email:
                         </div>
                     </div>
                 </div>
-                <div class="col mb-5">
+                <div class="col mb-5  col-6 col-md-4 col-lg-3">
                     <div class="card h-100">
                         <!-- Sale badge-->
                         <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
@@ -139,7 +139,7 @@ Email:
                         </div>
                     </div>
                 </div>
-                <div class="col mb-5">
+                <div class="col mb-5  col-6 col-md-4 col-lg-3">
                     <div class="card h-100">
                         <!-- Product image-->
                         <img class="card-img-top" :src="p4" alt="..." />
@@ -167,7 +167,7 @@ Email:
                         </div>
                     </div>
                 </div>
-                <div class="col mb-5">
+                <div class="col mb-5  col-6 col-md-4 col-lg-3">
                     <div class="card h-100">
                         <!-- Sale badge-->
                         <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
@@ -191,7 +191,7 @@ Email:
                         </div>
                     </div>
                 </div>
-                <div class="col mb-5">
+                <div class="col mb-5  col-6 col-md-4 col-lg-3">
                     <div class="card h-100">
                         <!-- Product image-->
                         <img class="card-img-top" :src="p6" alt="..." />
@@ -211,7 +211,7 @@ Email:
                         </div>
                     </div>
                 </div>
-                <div class="col mb-5">
+                <div class="col mb-5  col-6 col-md-4 col-lg-3">
                     <div class="card h-100">
                         <!-- Sale badge-->
                         <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
@@ -243,7 +243,7 @@ Email:
                         </div>
                     </div>
                 </div>
-                <div class="col mb-5">
+                <div class="col mb-5  col-6 col-md-4 col-lg-3">
                     <div class="card h-100">
                         <!-- Product image-->
                         <img class="card-img-top" :src="p8" alt="..." />

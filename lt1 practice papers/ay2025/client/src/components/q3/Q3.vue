@@ -55,12 +55,18 @@ const learningPath = ref([
     }
 ])
 
-const showSubskills = ref(true);
+const showSubskills = ref([]);
 
 function toggleSubSkills(evt, mainSkillId) {
 
     /* Part C: Add code here to toggle the display of sub-skills */
-    showSubskills = !showSubskills;
+    const index = showSubskills.value.indexOf(mainSkillId);
+
+    if (index===-1) {
+        showSubskills.value.push(mainSkillId);
+    } else {
+        showSubskills.value.splice(index, 1);
+    }
 }
 
 /* 
@@ -100,8 +106,8 @@ const mainSkillsProgress = computed(() => {
                     <h2>{{path.name}}</h2>
                 
                     <!-- Sub skills toggle button -->
-                    <button  class="toggle-button" @click="showSubskills=!showSubskills">
-                        {{ showSubskills ? "-" : "+" }}
+                    <button  class="toggle-button" @click="toggleSubSkills($event, path.id)">
+                        {{ showSubskills.includes(path.id) ? "-" : "+" }}
                     </button>
                 </div>
 
@@ -113,7 +119,7 @@ const mainSkillsProgress = computed(() => {
                 <p>Progress: {{ mainSkillsProgress[path.id] }}%</p>
 
                 <!-- Sub skills -->
-                <ul v-if="showSubskills" class="sub-skills-list">
+                <ul v-if="showSubskills.includes(path.id)" class="sub-skills-list">
                     <li v-for="sub in path.subSkills" class="sub-skill-item">
                         <p class="sub-skill-name">{{sub.name}}</p>
                     </li>

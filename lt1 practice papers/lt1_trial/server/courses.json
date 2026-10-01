@@ -100,11 +100,11 @@
             "coreForCL": false
         },
         {
-            "code": "test1",
-            "name": "testing",
-            "description": "text",
-            "coreForIS": false,
-            "coreForSE": false,
+            "code": "ddddddddddddddd",
+            "name": "ddddddddddddddddddd",
+            "description": "ddddddddddddddddd",
+            "coreForIS": true,
+            "coreForSE": true,
             "coreForCS": false,
             "coreForCL": false
         }

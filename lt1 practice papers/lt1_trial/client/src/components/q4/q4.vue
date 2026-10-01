@@ -27,6 +27,11 @@ const newCode = ref('');
 const newName = ref('');
 const newDescription = ref('');
 
+const coreIS = ref(false);
+const coreSE = ref(false);
+const coreCS = ref(false);
+const coreCL = ref(false);
+
 
 
 // Part (a) Load data function
@@ -59,9 +64,14 @@ async function addCourse() {
     const newCourse = {
         code: newCode.value,
         name: newName.value,
-        description: newDescription.value
+        description: newDescription.value,
+        coreForIS: coreIS.value,
+        coreForSE: coreSE.value,
+        coreForCS: coreCS.value,
+        coreForCL: coreCL.value
     }
 
+    console.log(newCourse);
 
     try {
         await axios.post(API_URL,newCourse)
