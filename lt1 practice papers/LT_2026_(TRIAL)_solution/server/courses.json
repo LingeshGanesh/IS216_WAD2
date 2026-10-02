@@ -1,0 +1,76 @@
+{
+    "courseInfo": [
+        {
+            "code": "is113",
+            "name": "Web Application Development I",
+            "description": "Vibe coding using JavaScript",
+            "coreForIS": true,
+            "coreForSE": true,
+            "coreForCS": false,
+            "coreForCL": true
+        },
+        {
+            "code": "cs101",
+            "name": "Programming I",
+            "description": "Vibe coding using C",
+            "coreForIS": false,
+            "coreForSE": false,
+            "coreForCS": true,
+            "coreForCL": false
+        },
+        {
+            "code": "se201",
+            "name": "AI Driven Software Engineering",
+            "description": "How to be artificially intelligent",
+            "coreForIS": true,
+            "coreForSE": true,
+            "coreForCS": false,
+            "coreForCL": false
+        },
+        {
+            "code": "is112",
+            "name": "Data Management",
+            "description": "SQL and diagrams",
+            "coreForIS": true,
+            "coreForSE": true,
+            "coreForCS": true,
+            "coreForCL": true
+        },
+        {
+            "code": "law101",
+            "name": "Contract Law I",
+            "description": "Offer, acceptance, consideration and legality",
+            "coreForIS": false,
+            "coreForSE": false,
+            "coreForCS": false,
+            "coreForCL": true
+        },
+        {
+            "code": "se301",
+            "name": "Advanced Programming and Design",
+            "description": "Java generics, multi-threading, performance",
+            "coreForIS": false,
+            "coreForSE": true,
+            "coreForCS": false,
+            "coreForCL": false
+        },
+        {
+            "code": "is213",
+            "name": "Enterprise Solution Development",
+            "description": "Microservices and cloud",
+            "coreForIS": true,
+            "coreForSE": true,
+            "coreForCS": false,
+            "coreForCL": false
+        },
+        {
+            "code": "se401",
+            "name": "Apprenticeship",
+            "description": "52-week-long full-time internship",
+            "coreForIS": false,
+            "coreForSE": true,
+            "coreForCS": false,
+            "coreForCL": false
+        }
+    ]
+}
